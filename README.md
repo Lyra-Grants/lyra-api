@@ -1,16 +1,12 @@
-# Lyra Avalon API _/
-UDP, Rest, Websocket API for easy integration with Lyra dapp.
+# Lyra API _/
+JSON API for easy integration with Lyra dapp.
 
 ## Goal 
-To make it easy for projects to consume data and integrate with Lyra Avalon.
+To make it easy for projects to consume data with Lyra.
 
 ## Overview
-### MVP Rest API (UDP / Websocket)
-Should also support protocol(s) for reading data such as UDP, REST or WebSocket.
+### MVP JSON API
 This implementation would make use of the JavaScript SDK,
-
-### OSI Fix Protocol
-Developing an API that implements OSI (Option Symbology Initiative) and supports FIX protocol.  Some examples of CEX option APIs that support FIX, REST and WebSocket are Deribit and FTX.
 
 ## Proposed Tech Stack
 - Next.js
@@ -22,12 +18,11 @@ Todo
 ### Install dependencies
 
 ```bash
-npm i
+yarn install
+yarn run
 ```
 
 ### Resources
-
-- [Lyra Finance Core NPM Package](https://www.npmjs.com/package/@lyrafinance/core)
 - [Lyra Finance Repositories](https://github.com/lyra-finance)
 
 ## Contributing
