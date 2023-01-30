@@ -3,11 +3,11 @@ JSON API for easy integration with Lyra dapp.
 <img width="755" alt="trades" src="https://user-images.githubusercontent.com/101510797/215606120-477e773b-d5cc-4958-abd3-1beabbebbb6b.png">
 ## Development
 
--[ ] Fetch Latest Trades
--[ ] Add Trade Data Resolver
--[ ] Add query string params
--[ ] Add paging
--[ ] Get trade data by trader
+- [ ] Fetch Latest Trades
+- [ ] Add Trade Data Resolver
+- [ ] Add query string params
+- [ ] Add paging
+- [ ] Get trade data by trader
 
 ### Install dependencies
 
