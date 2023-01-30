@@ -1,0 +1,63 @@
+{
+  "name": "lyra-api",
+  "version": "1.0.0",
+  "description": "Lyra API",
+  "license": "MIT",
+  "keywords": [
+    "lyra-finance",
+    "api"
+  ],
+  "scripts": {
+    "build-ts": "tsc",
+    "build": "yarn build-ts && yarn lint-fix",
+    "clean-svge": "rimraf coverage",
+    "clean-build": "rimraf build",
+    "clean-mdls": "lerna clean --yes && rimraf node_modules yarn.lock",
+    "debug": "yarn build & yarn watch-debug",
+    "dev": "tsnd --respawn --transpile-only src/server.ts",
+    "serve-debug": "tsnd --debug build/server.js",
+    "serve": "node dist/server.js",
+    "start": "node build/server.js",
+    "lint:ts": "eslint --ext .js,.ts .",
+    "lint:ts:fix": "yarn lint:ts --fix",
+    "format": "prettier --write \"**/*.+(js|ts|json)\"",
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yarn watch-ts\" \"yarn serve-debug\"",
+    "watch-ts": "tsc -w"
+  },
+  "dependencies": {
+    "@ethersproject/bignumber": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@ethersproject/units": "^5.7.0",
+    "@lyrafinance/lyra-js": "^0.0.23",
+    "@types/errorhandler": "^1.5.0",
+    "compression": "^1.7.4",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "errorhandler": "^1.5.1",
+    "ethers": "^5.7.2",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql-request": "^5.1.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/express": "^4.17.16",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.18",
+    "@types/node-schedule": "^2.1.0",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4",
+    "yarn-upgrade-all": "^0.7.2"
+  }
+}
