@@ -1,19 +1,12 @@
 # Lyra API _/
 JSON API for easy integration with Lyra dapp.
 
-## Goal 
-To make it easy for projects to consume data with Lyra.
-
-## Overview
-### MVP JSON API
-This implementation would make use of the JavaScript SDK,
-
-## Proposed Tech Stack
-- Next.js
-- React
-
 ## Development
-Todo
+[] Fetch Latest Trades
+[] Add Trade Data Resolver
+[] Add query string params
+[] Add paging
+[] Get trade data by trader
 
 ### Install dependencies
 
